@@ -54,17 +54,17 @@ import { MockDataModule } from './mock/mock-data.module';
 
 const socialLinks = [
   {
-    url: 'https://github.com/akveo/nebular',
+    url: 'https://github.com/sbenstewart/monkey-tagger',
     target: '_blank',
     icon: 'github',
   },
   {
-    url: 'https://www.facebook.com/akveo/',
+    url: 'https://monkey-tagger.netlify.com/',
     target: '_blank',
     icon: 'facebook',
   },
   {
-    url: 'https://twitter.com/akveo_inc',
+    url: 'https://sbenstewart.in/',
     target: '_blank',
     icon: 'twitter',
   },
