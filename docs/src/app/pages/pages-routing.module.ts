@@ -12,6 +12,10 @@ const routes: Routes = [{
   children: [
     {
       path: 'dashboard',
+      component: DashboardComponent,
+    },
+    {
+      path: 'commerce-dashboard',
       component: ECommerceComponent,
     },
     {
