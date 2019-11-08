@@ -11,7 +11,7 @@ const routes: Routes = [{
   component: PagesComponent,
   children: [
     {
-      path: 'dashboard',
+      path: 'new-dashboard',
       component: DashboardComponent,
     },
     {
@@ -74,7 +74,7 @@ const routes: Routes = [{
     },
     {
       path: '',
-      redirectTo: 'dashboard',
+      redirectTo: 'new-dashboard',
       pathMatch: 'full',
     },
     {
