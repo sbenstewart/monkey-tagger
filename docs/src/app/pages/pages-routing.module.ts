@@ -11,10 +11,6 @@ const routes: Routes = [{
   component: PagesComponent,
   children: [
     {
-      path: 'dashboard',
-      component: DashboardComponent,
-    },
-    {
       path: 'commerce-dashboard',
       component: ECommerceComponent,
     },
@@ -74,7 +70,7 @@ const routes: Routes = [{
     },
     {
       path: '',
-      redirectTo: 'new-dashboard',
+      redirectTo: 'commerce-dashboard',
       pathMatch: 'full',
     },
     {
