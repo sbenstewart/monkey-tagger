@@ -268,20 +268,7 @@ define([
          * @memberOf widgets/app-header/app-header
          */
         _setApplicationName: function () {
-            var applicationName;
-            // first check if application name is configured than display that
-            // second check if group title is available display that
-            // if user clicks cancel button than display sign-in text
-            if (this.appConfig.applicationName && lang.trim(this.appConfig.applicationName).length !== 0) {
-                applicationName = this.appConfig.applicationName;
-            } else if (this.appConfig.groupInfo.results.length > 0 && this.appConfig.groupInfo.results[0].title) {
-                applicationName = this.appConfig.groupInfo.results[0].title;
-            } else {
-                applicationName = this.appConfig.i18n.applicationHeader.pleaseSignInText;
-            }
-            if (!this.appConfig.logInDetails) {
-                applicationName = this.appConfig.i18n.applicationHeader.pleaseSignInText;
-            }
+            var applicationName = "Monkey Tagger Manager";
             // to set title of document
             document.title = applicationName;
             // to set application name
