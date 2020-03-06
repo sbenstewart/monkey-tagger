@@ -1,0 +1,45 @@
+﻿/* Common style CSS starts */
+
+.esriCTEllipsis
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.esriCTDefaultCursor
+{
+    cursor: default;
+}
+
+.esriCTPointerCursor
+{
+    cursor: pointer;
+}
+
+.esriCTHidden
+{
+    display: none;
+}
+
+.esriCTVisible
+{
+    display: block;
+}
+
+.esriCTBorder
+{
+    border: 1px solid #ffffff;
+}
+
+.esriCTWhiteBackGround
+{
+    background-color: #ffffff;
+}
+
+.esriCTTextAlignCenter
+{
+    text-align: center;
+}
+
+/* Common style CSS ends */
