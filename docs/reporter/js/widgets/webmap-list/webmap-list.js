@@ -348,6 +348,13 @@ define([
                 // first check if web-map thumbnail is available than display it
                 // second check if web-map thumbnail is configured than display it
                 // third if none of above scenario is valid than display fallback icon
+
+                if(i == 0 || i==1 || i==5)
+                {
+                    continue;
+                }
+
+            
                 if (this.filteredWebMapResponseArr[i][1].itemInfo.item.thumbnail) {
                     tokenString = "";
                     if (this.appConfig.logInDetails.token) {

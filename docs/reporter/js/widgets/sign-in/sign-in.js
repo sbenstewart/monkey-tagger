@@ -143,17 +143,10 @@ define([
         * @memberOf widgets/sign-in/sign-in
         */
         _createLoginScreenUI: function () {
-            var applicationName;
+            var applicationName = "Monkey Tagger";
             this._setLoginScreenStyles();
             this.domNode = domConstruct.create("div", {}, dojo.body());
             this.domNode.appendChild(this.signinOuterContainer);
-            if (this._config.applicationName && lang.trim(this._config.applicationName).length !== 0) {
-                applicationName = this._config.applicationName;
-            } else if (this._config.groupInfo.results.length > 0 && this._config.groupInfo.results[0].title) {
-                applicationName = this._config.groupInfo.results[0].title;
-            } else {
-                applicationName = this._config.i18n.signin.noGroupNameText;
-            }
             document.title = applicationName;
             domAttr.set(this.signinContainerName, "innerHTML", applicationName);
             domAttr.set(this.signinHelpLink, "innerHTML", this._config.helpLinkText);
@@ -167,11 +160,7 @@ define([
             }
             domAttr.set(this.signinGuestUser, "innerHTML", this._config.i18n.signin.guestSigninText);
             domAttr.set(this.signinOptions, "innerHTML", this._config.i18n.signin.signinOptionsText);
-            if (this._config.signInBackgroundImage.indexOf("http") === 0) {
-                domStyle.set(this.signinBgImage, "backgroundImage", 'url(' + this._config.signInBackgroundImage + ')');
-            } else {
-                domStyle.set(this.signinBgImage, "backgroundImage", 'url(' + dojoConfig.baseURL + this._config.signInBackgroundImage + ')');
-            }
+            
 
             //If guest login is disabled from configuration, make sure we are not showing it on login screen
             if (!this._config.enableGuestAccess) {
