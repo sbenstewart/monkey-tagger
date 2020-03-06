@@ -1,0 +1,398 @@
+﻿/** Application header container starts **/
+
+.dj_rtl .esriCTApplicationHeaderIconContainer {
+    float: right;
+}
+
+.dj_rtl .esriCTApplicationNameContainer {
+    float: right;
+}
+
+.dj_rtl .esriCTHelpIconContainer {
+    float: left;
+}
+
+.dj_rtl .esriCTSearchIconContainer, .dj_rtl .esriCTSearchIconContainerDisabled {
+    float: left;
+}
+
+.dj_rtl .esriCTManualRefreshIconContainer, .dj_rtl .esriCTManualRefreshIconContainerDisable {
+    float: left;
+}
+
+.dj_rtl .esriCTApplicationName {
+    text-align: right;
+}
+
+.dj_rtl .esriCTSearchBox {
+    float: right;
+}
+
+.dj_rtl .esriCTClearBtn {
+    float: right;
+}
+
+.dj_rtl .esriCTClearDiv {
+    border-left: 1px solid #DFDFDF;
+    border-right: none;
+}
+
+.dj_rtl .esriCTSearchButton {
+    margin-right: 5px;
+}
+
+.dj_rtl .esriCTSelectionOptionsContainerDisabled {
+    float: left;
+    margin-left: 17px !important;
+}
+
+.dj_rtl .esriCTSelectionOptionsContainerEnabled {
+    float: left;
+    margin-left: 17px !important;
+}
+
+
+/** Application header container ends **/
+
+
+/** Details panel container starts **/
+
+.dj_rtl .esriCTDetailsPanelWrapperContainer {
+    float: right;
+    border-left: 1px solid #bdbdbd;
+    border-right: none;
+    padding: 20px 0px 0px 0px;
+}
+
+.dj_rtl .esriCTCancelCommentButton, .dj_rtl .esriCTCancelPopupButton {
+    float: left;
+}
+
+
+/** Comments panel starts*/
+
+.dj_rtl .esriCTCommentformContainer {
+    right: auto;
+}
+
+.dj_rtl .esriCTCommentButton, .dj_rtl .esriCTEditFeatureButton {
+    right: auto;
+    left: 8px;
+}
+
+.input-group-addon:first-child {
+    border-left: 0;
+    border-right: 1px solid;
+}
+
+.dj_rtl .esriCTCommentsBadgeContainer {
+    float: none;
+}
+
+.dj_rtl .esriCTDetailsPanelTabContainer .badge {
+    float: right;
+}
+
+.dj_rtl .esriCTAddCommentButton {
+    margin-left: 0;
+    margin-right: 2px;
+}
+
+.dj_rtl .esriCTNonImageContainer {
+    margin: 5px 0 5px 10px;
+}
+
+.dj_rtl .esriCTAddCommentsIcon {
+    float: right;
+    margin: 0 0 0 2px;
+}
+
+
+/** Comments panel ends*/
+
+
+/** Popup panel starts*/
+
+.dj_rtl .esriCTNonImageContainer {
+    float: right;
+}
+
+
+/** Popup panel ends*/
+
+
+/** Details panel container ends **/
+
+
+/** Map panel container starts **/
+
+.dj_rtl .esriCTMapPanelWrapperContainer {
+    float: left;
+}
+
+.dj_rtl .esriSimpleSliderTL {
+    top: 20px;
+    left: auto;
+    right: 20px;
+}
+
+.dj_rtl .esriCTDetailsPanelWrapperContainer .esriViewPopup .header {
+    margin-right: 0px;
+    margin-left: 30px;
+}
+
+
+/** Map panel container ends **/
+
+
+/** Webmap list panel starts **/
+
+.dj_rtl .esriCTInfoImgRight {
+    float: left;
+}
+
+.dj_rtl .esriCTMultiLineEllipsisdiv {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.dj_rtl .esriCTWebMapPanelToggleBtnPosition {
+    right: 40px;
+    float: left;
+}
+
+.dj_rtl .esriCTWebMapPanelToggleBtnPositionClose {
+    right: 40px;
+    float: left;
+}
+
+.dj_rtl .esriCTWebMapListWrapperContainer {
+    border-left: 1px solid #cccccc;
+    border-right: 0px;
+    box-shadow: -4px 1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dj_rtl .esriCTRightWebMapOperationalLayerArrow {
+    float: left;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+
+/** Webmap list panel ends **/
+
+
+/** Data viewer container starts **/
+
+.dj_rtl .esriCTTableHeader {
+    float: right;
+}
+
+
+/** Data viewer container ends **/
+
+
+/** Filter panel container starts **/
+
+.dj_rtl .esriCTFilterLabel {
+    float: right;
+}
+
+.dj_rtl .esriCTInputTextBoxDiv, .dj_rtl .esriCTSelectOptionDiv {
+    float: right;
+}
+
+.dj_rtl .esriCTInputTextBox {
+    float: right;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.dj_rtl .esriCTRadioButtonDiv {
+    float: right;
+}
+
+.dj_rtl input.esriCTRadioButton {
+    float: right;
+    margin: 5px 0 0 5px;
+}
+
+.dj_rtl .esriCTRadioButtonLabel {
+    float: right;
+    margin: 0 0 0 5px;
+}
+
+.dj_rtl .esriCTSelectOption {
+    float: right;
+    padding: 0px 1px 0px 0px;
+}
+
+.dj_rtl .esriCTFilterParentContainer .input-group.date {
+    float: right;
+}
+
+.dj_rtl .esriCTDisabledCloseSpan, .dj_rtl .esriCTActiveCloseSpan {
+    float: left;
+}
+
+.dj_rtl .esriCTFilterParentContainer .input-group-addon {
+    border-right: 1px solid #959595;
+    border-left: 0;
+}
+
+.dj_rtl .esriCTBlackCaretIcon {
+    float: left;
+    padding-right: 5px;
+    margin-left: 0;
+}
+
+.dj_rtl .esriCTFilterIcon, .dj_rtl .esriCTDisableFilterIcon {
+    float: left;
+    margin: 4px 0 0 5px;
+}
+
+.dj_rtl .esriCTFilterContainer {
+    float: none;
+}
+
+
+/** Filter panel container ends **/
+
+
+/** Time Slider container starts **/
+
+.dj_rtl .esriCTTimeSliderContainer {
+    float: right;
+}
+
+.dj_rtl .esriCTDataViewerContainer .divTableWithFloatingHeader {
+    width: 100%;
+    display: table;
+}
+
+.dj_rtl .esriCTTimeSliderTextContainer {
+    float: right;
+    text-align: left;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+
+/** Time Slider container end **/
+
+
+/** Help Dialog starts **/
+
+.dj_rtl .esriCTClose {
+    float: left;
+}
+
+
+/** Help Dialog ends **/
+
+
+/** Search Panel starts **/
+
+.dj_rtl .esriCTSearchContainer {
+    right: auto;
+    left: 2px;
+}
+
+
+/** Search Panel ends **/
+
+
+/** Sign-in container starts **/
+
+.dj_rtl .esriCTSignInDetailContainer {
+    float: left;
+}
+
+.dj_rtl .esriCTSignInUserNameDetails {
+    float: right;
+}
+
+.dj_rtl .esriSignedInUserDetailsCaretIcon {
+    padding-left: auto;
+    padding-right: 2px;
+}
+
+.dj_rtl .esriCTSignOutOption {
+    right: auto;
+    left: 0px;
+    text-align: right;
+}
+
+.dj_rtl .esriCTSignOutOptionErrorMode {
+    right: auto;
+    left: 0px;
+}
+
+.dj_rtl .esriCTSeparator {
+    float: left;
+}
+
+
+/** Sign-in container ends **/
+
+
+/** Operational layer name, feature count and export to csv section starts **/
+
+.dj_rtl .esriCTOperationalLayerName {
+    float: right;
+}
+
+.dj_rtl .esriCTFeatureCount {
+    float: right;
+    padding-right: 0px;
+    padding-left: 15px;
+    text-align: right;
+}
+
+.dj_rtl .esriCTExportToCSVParentContainer {
+    float: right;
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+/** Operational layer name, feature count and export to csv section ends **/
+
+
+/** basemap gallery and legend panels **/
+
+.dj_rtl .esriCTHeaderTitle {
+    float: right;
+    margin-right: 5px;
+    margin-left: 0px;
+}
+
+.dj_rtl .esriCTPanelCloseBtn {
+    margin-left: 5px;
+}
+
+
+/** basemap gallery and legend panels **/
+
+/* Popup & Comment attachment starts */
+
+.dj_rtl .esriCTFileButtonContainer {
+    float: right;
+}
+
+.dj_rtl .esriCTAttachmentSelectedCount {
+    float: right;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.dj_rtl .esriCTFileAlert {
+    float: right;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+/* Popup & Comment attachment ends */
