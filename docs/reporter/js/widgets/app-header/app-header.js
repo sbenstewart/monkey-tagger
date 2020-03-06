@@ -88,9 +88,6 @@ define([
                     "appUtils": this.appUtils
                 });
 
-                this.helpScreen.onDialogClosed = lang.hitch(this, function () {
-                    this.helpButton.focus();
-                });
             }
             if (this.appConfig.enableShare) {
                 this._createShareDialogContent();
@@ -147,7 +144,6 @@ define([
                 }));
 
                 //Adding class to hide help icon in mobile view if login is enabled
-                domClass.add(this.helpButton, "esriCTMobileHelpIcon");
                 domClass.add(this.shareButton, "esriCTMobileHelpIcon");
             } else {
                 if (domClass.contains(this.mobileMenuBurger, "esriCTMobileIcons")) {
@@ -156,8 +152,6 @@ define([
             }
 
             if (this.appConfig.enableHelp) {
-                domClass.remove(this.helpButton, "esriCTHidden");
-                domStyle.set(this.esriCTLoginOptionsDiv, "right", "50px");
             } else {
                 domStyle.set(this.esriCTLoginOptionsDiv, "right", "6px");
             }
@@ -166,10 +160,7 @@ define([
                 domClass.remove(this.shareButton, "esriCTHidden");
             }
 
-            on(this.helpButton, "click, keypress", lang.hitch(this, this._helpClicked));
             on(this.shareButton, "click, keypress", lang.hitch(this, this._shareClicked));
-            domAttr.set(this.helpButton, "title", this.appConfig.helpLinkText);
-            domAttr.set(this.helpButton, "aria-label", this.appConfig.helpLinkText);
             //Load help screen on load based on configuration settings
             setTimeout(lang.hitch(this, function () {
                 if (this.appConfig.showHelpOnLoad) {
@@ -243,14 +234,7 @@ define([
         * @memberOf widgets/app-header/app-header
         */
         _setApplicationTitle: function () {
-            var applicationName = "";
-            if (this.appConfig.applicationName && lang.trim(this.appConfig.applicationName).length !== 0) {
-                applicationName = this.appConfig.applicationName;
-            } else if (this.appConfig.groupInfo.results.length > 0 && this.appConfig.groupInfo.results[0].title) {
-                applicationName = this.appConfig.groupInfo.results[0].title;
-            } else {
-                applicationName = this.appConfig.i18n.signin.noGroupNameText;
-            }
+            var applicationName = "Monkey Tagger";
             document.title = applicationName;
             domAttr.set(this.applicationHeaderName, "innerHTML", applicationName);
             domAttr.set(this.applicationHeaderName, "aria-label", applicationName);
@@ -327,7 +311,6 @@ define([
                 domClass.remove(this.caretIcon, "esriCTHidden");
             }
             if (!this.appConfig.enableHelp) {
-                domClass.add(this.helpButton, "esriCTHidden");
             }
             if (!this.appConfig.enableShare) {
                 domClass.add(this.shareButton, "esriCTHidden");

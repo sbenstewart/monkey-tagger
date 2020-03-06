@@ -328,6 +328,12 @@ define([
             thumbnailSrc = "";
             infoDescription = "";
             for (i = 0; i < this._filteredWebMapResponseArr.length; i++) {
+
+                if(i == 0 || i==1 || i==5)
+                {
+                    continue;
+                }
+                
                 editCapabilityLayerCount = this._filteredWebMapResponseArr[i][1].itemInfo.itemData.operationalLayers.length;
                 // set token for private groups to fetch thumbnail
                 // first check if web-map thumbnail is available than display it

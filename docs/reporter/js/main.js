@@ -2968,31 +2968,7 @@ define([
             //since by default in mobile view only home screen should be open*/
             this._isWebMapListLoaded = true;
 
-            //Add accessibility parameters to attribution widget and esri logo
-            var attribution, esriLogo;
-            attribution = query(".esriAttribution", dom.byId("mapDiv"))[0];
-            esriLogo = query(".logo-med", dom.byId("mapDiv"))[0];
-            if (attribution) {
-                domAttr.set(attribution, "tabindex", "-1");
-                on(attribution, "keypress, click", lang.hitch(this, function (evt) {
-                    if (!this.appUtils.validateEvent(evt)) {
-                        return;
-                    }
-                    //Add aria-expanded attribute based on the state
-                    if (domClass.contains(attribution, "esriAttributionOpen")) {
-                        domAttr.set(attribution, "aria-expanded", "true");
-                    } else {
-                        domAttr.set(attribution, "aria-expanded", "false");
-                    }
-                }));
-                //Add role as button
-                domAttr.set(attribution, "role", "button");
-                domAttr.set(attribution, "aria-expanded", "false");
-            }
-            if (esriLogo) {
-                domAttr.set(esriLogo, "tabindex", "-1");
-                domAttr.set(esriLogo, "role", "link");
-            }
+            
 
         },
 
