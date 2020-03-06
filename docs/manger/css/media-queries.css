@@ -1,0 +1,41 @@
+﻿/* Common devices & browsers starts */
+
+@media screen and (max-width:1024px)
+{
+    .esriSimpleSliderDecrementButton:hover, .esriSimpleSliderIncrementButton:hover
+    {
+        background-color: #fff;
+    }
+
+    .esriCTDetailsPanelWrapperContainer .nav-tabs > li > a:hover
+    {
+        background-color: #f8f8f8 !important;
+        border-top: 0px;
+    }
+}
+
+/* Common devices & browsers ends */
+
+/* Galaxy tab starts */
+
+@media (min-device-width: 800px) and (max-device-width: 1279px)
+{
+    .ui-resizable-handle
+    {
+        background: none;
+    }
+}
+
+/* Galaxy tab ends */
+
+/* Retina images starts */
+
+@media only screen and (min-device-width : 319px) and (max-device-width : 1280px) and (-webkit-min-device-pixel-ratio: 2)
+{
+    .ui-resizable-handle
+    {
+        background: none;
+    }
+}
+
+/* Retina images ends */
