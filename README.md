@@ -37,7 +37,13 @@ For this, you will have to do the following steps.
 * Access the Web Server URL as provided by the `Web Server for Chrome`.
 * The links will be as follows.
     1. Basic user [rootURL](http://127.0.0.1:8887)
+    ```
+    http://127.0.0.1:8887
+    ```
     2. Administrator [rootURL/manager](http://127.0.0.1:8887/manager)
+    ```
+    http://127.0.0.1:8887/manager
+    ```
 * It is also fine that any other method to run the localhost server can be used.
 
 ## How was monkey-tagger developed
@@ -62,4 +68,4 @@ To contribute to monkey-tagger, follow these steps:
 
 If you want to contact me you can reach me at <sbenstewart@gmail.com>.
 
-<h2>Have a great day :)</h2>
+<b>Have a great day :)<b>
