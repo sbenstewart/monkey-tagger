@@ -21,7 +21,7 @@ The above serverless application is being hosted using the platform provided by 
 
 All the required tags of the monkey-tagger can be used as per the wish of the user. 
 
-The posted tags can mean some intended meaning for the subset of users of the community, but those tags should not hurt other people online.
+The posted tags can have some intended meaning for the subset of users of the community, but those tags should not hurt other people online.
 
 Considering the safety of other users online, care must be taken by all users to avoid any such untoward incidents.
 
